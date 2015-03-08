@@ -10,7 +10,7 @@ d$Date <- as.POSIXlt(paste(as.Date(d$Date, format="%d/%m/%Y"), d$Time, sep=" "))
 png("plot2.png", width=480, height=480)
 ##Control the margins
 par(mar=c(5.0, 5.0, 1.2, 0.8))
-##Plot GAP vs. time
+##Plot Global_active_power vs. time
 plot(d$Date, d$Global_active_power, type="l",
      xlab="", ylab="Global Active Power (kilowatts)")
 dev.off()
